@@ -59,7 +59,9 @@ class PostsPagesTests(TestCase):
                 'post_id': 1}), 'posts/post_detail.html'),
             (reverse('posts:post_edit', kwargs={
                 'post_id': 1}), 'posts/create_post.html'),
-            (reverse('posts:post_create'), 'posts/create_post.html')
+            (reverse('posts:post_create'), 'posts/create_post.html'),
+            (reverse('posts:profile', kwargs={
+                'username': 'not_real_user'}), 'core/404.html')
         )
         for reverse_name, template in templates_pages_names:
             with self.subTest(reverse_name=reverse_name):
