@@ -173,4 +173,3 @@ class CommentFormTest(TestCase):
             follow=True,
         )
         self.assertEqual(Comment.objects.count(), 0)
-
