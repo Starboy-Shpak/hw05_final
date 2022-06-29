@@ -26,3 +26,4 @@
 <p><em><span style="background-color: #99ccff;">$ python manage.py migrate</span></em></p>
 <p>You can now run the development server:</p>
 <p><em><span style="background-color: #99ccff;">$ python manage.py runserver</span></em></p>
+
