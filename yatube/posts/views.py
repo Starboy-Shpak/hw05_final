@@ -6,7 +6,7 @@ from .forms import PostForm, CommentForm
 from .utils import get_paginators_page
 
 
-@cache_page(60 * 20)
+@cache_page(20 * 10)
 def index(request):
     post_list = Post.objects.select_related('author', 'group').all()
     page_obj = get_paginators_page(post_list, request)
